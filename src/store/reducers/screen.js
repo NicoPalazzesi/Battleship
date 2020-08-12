@@ -1,6 +1,7 @@
 export const screen = {
   START_SCREEN: 0,
-  GAME_SCREEN: 1
+  GAME_SCREEN: 1,
+  END_SCREEN: 2
 }
 
 export const screenInitialState = {
