@@ -1,12 +1,15 @@
 import { combineReducers } from 'redux';
 
 import {screenReducer, screenInitialState} from './screen';
+import {playerReducer, playerInitialState} from './player';
 
 export default combineReducers(
   { 
-    screen: screenReducer
+    screen: screenReducer,
+    player: playerReducer
   }, 
   { 
-    screenReducer: screenInitialState
+    screenReducer: screenInitialState,
+    playerReducer: playerInitialState
   }
 )
