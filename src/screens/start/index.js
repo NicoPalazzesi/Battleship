@@ -6,6 +6,8 @@ import Button from '../../components/button.js';
 import { validatePlayerName } from '../../store/actions/player';
 import { setScreen } from '../../store/actions/screen';
 import { screen } from '../../store/reducers/screen';
+import GameBoard from '../../components/game.board';
+import {newGameBoard} from '../../helpers/game.board'; // temporary
 
 function Start() {
 
@@ -23,8 +25,8 @@ function Start() {
   return (
     <div>
       <h1>Battleship</h1>
+      <GameBoard grid={newGameBoard()} />
       <InputPlayerName />
-      <br/>
       <Button text="START GAME" onClick={onClickStartGame} />
     </div>
   );
